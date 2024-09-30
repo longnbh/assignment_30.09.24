@@ -20,9 +20,9 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person giangVien;
-        Person sinhVien;
-        Person nhanSuKhac;
+        Person[] giangVien = new Person[20];
+        Person[] sinhVien = new Person[30];
+        Person[] nhanSuKhac = new Person[10];
     }
 
 
