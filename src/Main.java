@@ -71,7 +71,14 @@ public class Main {
         Person other1 = new Person("1978", "Nguyen Van A");
         Person other2 = new Person("1985", "Tran Thi B");
 
+        Person[] lecturers = {l1, l2};
+        Person[] students = {s1, s2};
+
         //in danh sach giang vien
         System.out.println("Danh sach giang vien:");
+        for (Person lecturer : lecturers) {
+            System.out.println("Ten: " + lecturer.getFullName() + ", Nam sinh: " + lecturer.getYearOfBirth());
+
+        }
     }
 }
