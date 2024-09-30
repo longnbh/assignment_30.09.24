@@ -3,6 +3,13 @@ public class Person {
     private String yearOfBirth;
     private String fullName;
 
+    public Person() {}
+
+    public Person(String yearOfBirth, String fullName) {
+        this.yearOfBirth = yearOfBirth;
+        this.fullName = fullName;
+    }
+
     public String getYearOfBirth() {
         return yearOfBirth;
     }
@@ -20,10 +27,26 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person[] giangVien = new Person[20];
-        Person[] sinhVien = new Person[30];
-        Person[] nhanSuKhac = new Person[10];
+
     }
 
+}
 
+class Student extends Person {
+    private String mssv;
+
+    public Student() {}
+
+    public Student(String yearOfBirth, String fullName, String mssv) {
+        super(yearOfBirth, fullName);
+        this.mssv = mssv;
+    }
+
+    public String getMssv() {
+        return mssv;
+    }
+
+    public void setMssv(String mssv) {
+        this.mssv = mssv;
+    }
 }
